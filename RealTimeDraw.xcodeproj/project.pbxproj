@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B1501F51DA42C920062D29D /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1501F41DA42C920062D29D /* DrawingView.swift */; };
 		7BBC18571DA2F4BC00E05439 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBC18561DA2F4BC00E05439 /* AppDelegate.swift */; };
 		7BBC18591DA2F4BC00E05439 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBC18581DA2F4BC00E05439 /* ViewController.swift */; };
 		7BBC185C1DA2F4BC00E05439 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BBC185A1DA2F4BC00E05439 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B1501F41DA42C920062D29D /* DrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		7BBC18531DA2F4BC00E05439 /* RealTimeDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealTimeDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BBC18561DA2F4BC00E05439 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BBC18581DA2F4BC00E05439 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B1501F11DA42C5F0062D29D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7BBC18561DA2F4BC00E05439 /* AppDelegate.swift */,
+				7BBC18581DA2F4BC00E05439 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7B1501F21DA42C680062D29D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7B1501F41DA42C920062D29D /* DrawingView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7B1501F31DA42C700062D29D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		7BBC184A1DA2F4BC00E05439 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +80,9 @@
 		7BBC18551DA2F4BC00E05439 /* RealTimeDraw */ = {
 			isa = PBXGroup;
 			children = (
-				7BBC18561DA2F4BC00E05439 /* AppDelegate.swift */,
-				7BBC18581DA2F4BC00E05439 /* ViewController.swift */,
+				7B1501F31DA42C700062D29D /* Model */,
+				7B1501F21DA42C680062D29D /* View */,
+				7B1501F11DA42C5F0062D29D /* Controller */,
 				7BBC185A1DA2F4BC00E05439 /* Main.storyboard */,
 				7BBC185D1DA2F4BC00E05439 /* Assets.xcassets */,
 				7BBC185F1DA2F4BC00E05439 /* LaunchScreen.storyboard */,
@@ -137,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B1501F51DA42C920062D29D /* DrawingView.swift in Sources */,
 				7BBC18591DA2F4BC00E05439 /* ViewController.swift in Sources */,
 				7BBC18571DA2F4BC00E05439 /* AppDelegate.swift in Sources */,
 			);
@@ -302,6 +330,7 @@
 				7BBC18671DA2F4BC00E05439 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
